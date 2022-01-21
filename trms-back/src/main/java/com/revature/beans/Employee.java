@@ -14,14 +14,14 @@ public class Employee {
 	private Department department;
 	
 	public Employee() {
-		empId=0;
+		empId=1;
 		firstName="First";
 		lastName="Last";
 		username="";
 		password="";
 		role = new Role();
 		funds = 1000.00;
-		supervisor = new Employee();
+		supervisor = null;
 		department = new Department();
 	}
 

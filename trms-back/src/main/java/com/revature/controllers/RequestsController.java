@@ -1,5 +1,8 @@
 package com.revature.controllers;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.revature.beans.Employee;
 import com.revature.beans.Reimbursement;
 import com.revature.services.EmployeeService;
@@ -10,6 +13,8 @@ import io.javalin.http.HttpCode;
 
 public class RequestsController {
 	private static EmployeeService empServ = new EmployeeServiceImpl();
+	
+	private static Logger log = LogManager.getLogger(RequestsController.class);
 	
 	/**
 	 * Retrieves the submitted reimbursement request from the

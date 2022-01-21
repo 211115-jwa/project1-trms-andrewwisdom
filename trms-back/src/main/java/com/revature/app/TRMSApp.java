@@ -9,7 +9,7 @@ import com.revature.controllers.RequestsController;
 public class TRMSApp {
 
 	public static void main(String[] args) {
-		Javalin app = Javalin.create().start();
+		Javalin app = Javalin.create().start(2345);
 		
 		app.routes(() -> {
 			path("/requests", () -> {
